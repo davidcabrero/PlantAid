@@ -1,0 +1,36 @@
+{
+  "tomato": {
+    "bacterial_spot": {
+      "descripcion": "Manchas oscuras empapadas en agua en hojas y fruto causadas por Xanthomonas spp.",
+      "tratamiento": "Eliminar hojas severamente afectadas; aplicar cobre (oxicloruro) rotando con bactericidas biológicos; evitar salpicaduras de riego.",
+      "prevencion": "Usar semilla certificada, desinfectar herramientas, reducir humedad foliar."},
+    "early_blight": {
+      "descripcion": "Lesiones concéntricas marrones (Alternaria solani) en hojas inferiores.",
+      "tratamiento": "Fungicidas con mancozeb o clorotalonil en rotación; retirar residuos infectados.",
+      "prevencion": "Rotación de cultivos (>=2 años), espaciamiento adecuado, buen drenaje."},
+    "late_blight": {
+      "descripcion": "Lesiones irregulares acuosas con moho blanco en envés (Phytophthora infestans).",
+      "tratamiento": "Aplicar fungicidas sistémicos (metalaxil alternado) al inicio de síntomas; destruir plantas severas.",
+      "prevencion": "Evitar exceso de humedad, eliminar voluntarias, monitoreo climático."},
+    "leaf_mold": {
+      "descripcion": "Manchas amarillas arriba y moho oliváceo debajo (Passalora fulva).",
+      "tratamiento": "Mejorar ventilación, reducir HR, fungicidas preventivos si presión alta.",
+      "prevencion": "Variedades tolerantes, manejo de humedad, limpieza de invernadero."}
+  },
+  "cassava": {
+    "mosaic": {
+      "descripcion": "Moteado clorótico mosaico en hojas (virus mosaico yuca).",
+      "tratamiento": "No hay curativo; eliminar plantas afectadas tempranas.",
+      "prevencion": "Material vegetativo sano, control de mosca blanca, variedades resistentes."},
+    "bacterial_blight": {
+      "descripcion": "Marchitez y exudados gomosos (Xanthomonas axonopodis pv. manihotis).",
+      "tratamiento": "Eliminar tallos infectados, desinfección de herramientas.",
+      "prevencion": "Yemas sanas, rotación, manejo de vectores."}
+  },
+  "grape": {
+    "black_rot": {
+      "descripcion": "Manchas marrón claro con borde oscuro y picnidios negros.",
+      "tratamiento": "Fungicidas protectantes (mancozeb) y sistémicos (triazoles) en rotación.",
+      "prevencion": "Eliminar zarcillos momificados, podas sanitarias, ventilación."}
+  }
+}

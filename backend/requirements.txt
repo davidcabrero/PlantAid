@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pillow
+torch
+onnxruntime
+python-multipart
+pydantic
+rich
