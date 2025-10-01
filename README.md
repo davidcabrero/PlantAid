@@ -3,15 +3,15 @@
 Aplicación para detectar enfermedades de plantas a partir de fotografías con un modelo de ML entrenado.
 
 ## Componentes
-- `ml/`: Entrenamiento y experimentación del modelo (PyTorch + datasets públicos PlantVillage, AI Challenger PlantDoc, cassava, etc.).
+- `ml/`: Scripts de entrenamiento del modelo, evaluación y normalizar datasets.
 - `backend/`: API (FastAPI) para inferencia, gestión de metadatos y tratamiento.
-- `frontend/`: Interfaz moderna (React + Vite + Tailwind) para subir fotos y visualizar resultados.
+- `frontend/`: Interfaz de la aplicación (React + Vite + Tailwind).
 
 ## Flujo
-1. Entrenar modelo con transferencia (p.ej. EfficientNet / ViT) usando datasets combinados normalizados de enfermedades.
+1. Entrenar modelo con transferencia usando datasets combinados normalizados de enfermedades.
 2. Exportar a formato TorchScript u ONNX para inferencia rápida.
 3. Servir modelo con FastAPI (endpoint `/predict`).
-4. Frontend permite subir imagen, recibe: especie, prob. enfermedad, diagnóstico, tratamientos sugeridos y links.
+4. La aplicación permite subir una imagen y muestra especie, prob. enfermedad, diagnóstico, tratamientos sugeridos y links.
 
 ## Instrucciones detalladas
 
@@ -24,17 +24,10 @@ cd frontend; npm install; cd ..
 ```
 
 ### 2. Descargar datasets
-PlantVillage / Cassava requieren credenciales Kaggle (`~/.kaggle/kaggle.json`).
-```powershell
-pip install kaggle
-setx KAGGLE_CONFIG_DIR "$env:USERPROFILE\.kaggle"
-# Copiar kaggle.json a %USERPROFILE%\.kaggle con permisos 600
-python ml/dataset_downloader.py --out ml/data/raw
-```
-Clonar PlantDoc manualmente:
-```powershell
-git clone https://github.com/pratikkayal/PlantDoc-Dataset ml/data/plantdoc
-```
+
+- PlantVillage (https://www.kaggle.com/datasets/emmarex/plantdisease)
+
+- PlantDoc (https://github.com/pratikkayal/PlantDoc-Dataset)
 
 ### 3. Unificar clases
 Coloca todo el contenido crudo en `ml/data/raw` y ejecuta:
